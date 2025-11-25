@@ -209,6 +209,17 @@
     font-size: 2rem;
   }
 
+  .filter-buttons {
+    gap: 0.75rem;
+  }
+
+  .filter-btn {
+    flex: 1;
+    min-width: 100px;
+    padding: 0.65rem 1rem;
+    font-size: 0.9rem;
+  }
+
   .portfolio h3 {
     font-size: 1.25rem;
   }
@@ -244,6 +255,18 @@
 }
 
 @media (max-width: 480px) {
+  .filter-buttons {
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .filter-btn {
+    flex: 1 1 calc(50% - 0.25rem);
+    min-width: auto;
+    padding: 0.6rem 0.5rem;
+    font-size: 0.85rem;
+  }
+
   .portfolio-item img {
     height: 150px;
   }
