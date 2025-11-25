@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+Allow: /
+
+Sitemap: https://my-react-portfolio-virid.vercel.app/sitemap.xml
