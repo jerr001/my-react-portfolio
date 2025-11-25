@@ -41,7 +41,7 @@ function Hero() {
           </p>
           <div className="btn-sci">
             <a
-              href="/docs/JeremiahObembeCV.pdf"
+              href={`${process.env.PUBLIC_URL}/docs/JeremiahObembeCV.pdf`}
               className="btn"
               download="JeremiahObembeCV.pdf"
             >
@@ -95,7 +95,10 @@ function Hero() {
         </div>
         <div className="home-img" ref={imgRef}>
           <div className="img-box">
-            <img src="/images/jeremiah.png" alt="Jeremiah Obembe" />
+            <img
+              src={`${process.env.PUBLIC_URL}/images/jeremiah.png`}
+              alt="Jeremiah Obembe"
+            />
           </div>
         </div>
       </div>

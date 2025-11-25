@@ -29,7 +29,7 @@ function Portfolio() {
 
   const webProjects = [
     {
-      image: "/images/task-manager.png",
+      image: `${process.env.PUBLIC_URL}/images/task-manager.png`,
       title: "JavaScript Task Manager",
       description:
         "A feature-rich task management app built with vanilla JavaScript, HTML5, and CSS, allowing users to create tasks with date, time, and priority settings, reorder them via drag-and-drop, and search or clear all tasks.",
@@ -38,7 +38,7 @@ function Portfolio() {
       category: "frontend",
     },
     {
-      image: "/images/weather-dashboard.png",
+      image: `${process.env.PUBLIC_URL}/images/weather-dashboard.png`,
       title: "Weather Dashboard",
       description:
         "A dynamic weather dashboard built with JavaScript, HTML5, and CSS, utilizing the OpenWeatherMap API to fetch and display real-time weather data for searched cities with local storage integration.",
@@ -47,11 +47,11 @@ function Portfolio() {
       category: "frontend",
     },
     {
-      image: "/agency/agency.png",
+      image: `${process.env.PUBLIC_URL}/agency/agency.png`,
       title: "Web Dev Agency",
       description:
         "A simple website for a web development agency built using HTML and CSS, showcasing clean design and basic functionality.",
-      liveDemo: "/agency/agency.html",
+      liveDemo: `${process.env.PUBLIC_URL}/agency/agency.html`,
       github: null,
       category: "frontend",
     },
@@ -95,28 +95,28 @@ function Portfolio() {
 
   const graphicProjects = [
     {
-      image: "/bizcard-front.jpg",
+      image: `${process.env.PUBLIC_URL}/bizcard-front.jpg`,
       title: "Business Card (Front)",
       description:
         "Designed the front page of a business card for the CEO of Regal Crest, a T-shirt branding and printing company.",
       category: "design",
     },
     {
-      image: "/Graphic-01.jpg",
+      image: `${process.env.PUBLIC_URL}/Graphic-01.jpg`,
       title: "Flyer Design (Miracle Service)",
       description:
         "A flyer design for the Living Waters International monthly miracle service, focusing on visual impact.",
       category: "design",
     },
     {
-      image: "/Graphic-02.jpg",
+      image: `${process.env.PUBLIC_URL}/Graphic-02.jpg`,
       title: "Flyer Design (Teaching Meeting)",
       description:
         "A flyer design for the Living Waters International weekly teaching meeting, emphasizing clarity and engagement.",
       category: "design",
     },
     {
-      image: "/bizcard-back.jpg",
+      image: `${process.env.PUBLIC_URL}/bizcard-back.jpg`,
       title: "Business Card (Back)",
       description:
         "Designed the back page of a business card for the CEO of Regal Crest, a T-shirt branding and printing company.",
