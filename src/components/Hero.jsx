@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "../styles/Hero.css";
+import profileImage from "../assets/jeremiah.png";
 
 function Hero() {
   const infoRef = useRef(null);
@@ -95,10 +96,7 @@ function Hero() {
         </div>
         <div className="home-img" ref={imgRef}>
           <div className="img-box">
-            <img
-              src={`${process.env.PUBLIC_URL}/images/jeremiah.png`}
-              alt="Jeremiah Obembe"
-            />
+            <img src={profileImage} alt="Jeremiah Obembe" />
           </div>
         </div>
       </div>
