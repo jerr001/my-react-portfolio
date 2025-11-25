@@ -1,0 +1,331 @@
+/* Hero Section */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 100px 5% 50px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.home-info {
+  width: 50%;
+  color: var(--text-primary);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.home-info.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.home-info h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.home-info h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3a8dd9;
+  margin-bottom: 1rem;
+  animation: slideInLeft 1s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-info h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #3a8dd9, transparent);
+  animation: expandWidth 1.2s ease-out;
+}
+
+.home-info p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  animation: slideInLeft 1.2s ease-out;
+}
+
+.btn-sci {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  animation: fadeInUp 1.4s ease-out;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #3a8dd9;
+  border: 2px solid #3a8dd9;
+  border-radius: 40px;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #0077cc;
+  border-color: #0077cc;
+  box-shadow: 0 0 15px rgba(58, 141, 217, 0.5);
+  transform: translateY(-2px);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 15px rgba(58, 141, 217, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(58, 141, 217, 0.8);
+  }
+}
+
+.sci {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.sci a {
+  display: inline-flex;
+  padding: 0.5rem;
+  border: 2px solid #3a8dd9;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  color: #3a8dd9;
+  transition: all 0.3s ease;
+}
+
+.sci a:hover {
+  background: #3a8dd9;
+  color: #fff;
+  transform: translateY(-2px);
+  animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.x-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: currentColor;
+}
+
+.home-img {
+  width: 50%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.home-img.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img-box {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.img-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid #3a8dd9;
+  box-shadow: 0 0 15px rgba(58, 141, 217, 0.3);
+  animation: float 3s ease-in-out infinite, rotateGlow 8s linear infinite;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes expandWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes rotateGlow {
+  0% {
+    box-shadow: 0 0 15px rgba(58, 141, 217, 0.3);
+  }
+  25% {
+    box-shadow: 0 0 25px rgba(58, 141, 217, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(58, 141, 217, 0.3);
+  }
+  75% {
+    box-shadow: 0 0 25px rgba(58, 141, 217, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(58, 141, 217, 0.3);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .home {
+    padding: 80px 5% 30px;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-info {
+    width: 100%;
+    order: 2;
+  }
+
+  .home-img {
+    width: 100%;
+    order: 1;
+    margin-bottom: 2rem;
+  }
+
+  .img-box {
+    max-width: 300px;
+  }
+
+  .home-info h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-info h2 {
+    font-size: 1.25rem;
+  }
+
+  .home-info p {
+    font-size: 0.9rem;
+  }
+
+  .btn-sci {
+    align-items: center;
+  }
+
+  .button-group {
+    justify-content: center;
+  }
+
+  .btn,
+  .contact-button,
+  .hire-me-button {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+  }
+
+  .sci {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home {
+    padding: 60px 5% 20px;
+  }
+
+  .home-info h1 {
+    font-size: 2rem;
+  }
+
+  .home-info h2 {
+    font-size: 1.1rem;
+  }
+
+  .home-info p {
+    font-size: 0.85rem;
+  }
+
+  .img-box {
+    max-width: 250px;
+  }
+
+  .btn,
+  .contact-button,
+  .hire-me-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    max-width: 180px;
+  }
+
+  .sci a {
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+}

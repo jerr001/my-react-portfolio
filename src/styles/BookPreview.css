@@ -1,0 +1,171 @@
+/* Book Preview Section */
+.book-preview-section {
+  background: linear-gradient(135deg, #1f242d 0%, #2c313a 100%);
+  padding: 3rem 1.5rem;
+  min-height: 100vh;
+}
+
+.book-preview-wrapper {
+  padding-top: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.book-preview-section .hero {
+  background: #2c323f;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.hero__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero__text {
+  font-size: 1.2rem;
+  color: #5b6777;
+  margin-bottom: 1.5rem;
+}
+
+.btn-custom {
+  background: #3a8dd9;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.btn-custom:hover {
+  background: #0077cc;
+}
+
+.book-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.sidebar {
+  flex: 1 1 250px;
+  background: #2c323f;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.sidebar__title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.sidebar__nav {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar__link {
+  display: block;
+  padding: 0.5rem;
+  color: #d9dfe8;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.sidebar__link:hover {
+  background: #1f242d;
+}
+
+.content {
+  flex: 3 1 600px;
+  background: #ffffff;
+  color: #333;
+  padding: 2rem;
+  border-radius: 10px;
+  user-select: none;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.content h3 {
+  font-size: 1.4rem;
+  margin: 1.5rem 0 0.5rem;
+  color: #1f242d;
+}
+
+.content h4 {
+  font-size: 1.2rem;
+  margin: 1rem 0 0.5rem;
+  font-style: italic;
+}
+
+.content p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.content ul,
+.content ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+}
+
+.content pre {
+  background: #2c323f;
+  color: #d9dfe8;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  user-select: text;
+  margin-bottom: 1rem;
+}
+
+.content code {
+  font-family: monospace;
+}
+
+.content strong {
+  color: #1f242d;
+}
+
+.content em {
+  color: #5b6777;
+}
+
+.content a {
+  color: #3a8dd9;
+  text-decoration: underline;
+}
+
+.content a:hover {
+  color: #0077cc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .book-main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    max-height: 500px;
+  }
+}
